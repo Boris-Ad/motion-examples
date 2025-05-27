@@ -24,7 +24,7 @@ export const Accordion3 = () => {
               transition-theme"
               >
                 <motion.span layout>
-                  <Image src={person.img} alt={person.name} width={32} height={32} className="size-8 object-center rounded-full" />
+                  <Image src={person.img} alt={person.name} width={32} height={32} className="size-8 object-cover rounded-full flex-none" />
                 </motion.span>
                 <motion.span layout>{person.name}</motion.span>
               </motion.button>
@@ -42,7 +42,7 @@ export const Accordion3 = () => {
               >
                 <div className="mb-3 flex justify-between items-center">
                   <h2 className="text-2xl">{persons[count].name}</h2>
-                  <Image src={persons[count].img} alt={persons[count].name} width={72} height={72} className="object-center rounded-full" />
+                  <Image src={persons[count].img} alt={persons[count].name} width={64} height={64} className="size-16 object-cover flex-none rounded-full" />
                 </div>
                 <p className="text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, voluptatem atque? Amet.</p>
                 <div className="mt-auto flex justify-end">

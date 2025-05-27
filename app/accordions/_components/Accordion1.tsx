@@ -5,6 +5,7 @@ import { ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { StickyTitle } from '@/components/StickyTitle';
+import { persons } from '@/data';
 
 export const Accordion1 = () => {
   const [value1, toggleValue1] = useCycle('close', 'open');
@@ -23,7 +24,7 @@ export const Accordion1 = () => {
           <motion.section initial={false} animate={value1} className="pb-2 border-b dark:border-slate-800 border-slate-200 overflow-hidden transition-theme">
           <button onClick={() => toggleValue1()} className="w-full p-2 flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <Image src="https://randomuser.me/api/portraits/women/75.jpg" alt="woman" width={50} height={50} className="rounded-full object-cover" />
+              <Image src={persons[1].img} alt="woman" width={50} height={50} className="h-12 w-12 rounded-full object-cover flex-none" />
               <p className="text-xl">Any Hale</p>
             </div>
             <ChevronDown className={clsx({ 'rotate-180': value1 === 'open' }, 'transition-transform')} />
@@ -39,7 +40,7 @@ export const Accordion1 = () => {
         <motion.section initial={false} animate={value2} className="pt-2 overflow-hidden">
           <button onClick={() => toggleValue2()} className="w-full p-2 flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <Image src="https://randomuser.me/api/portraits/men/75.jpg" alt="woman" width={50} height={50} className="rounded-full object-cover" />
+              <Image src={persons[0].img} alt="man" width={50} height={50} className="h-12 w-12 rounded-full object-cover flex-none" />
               <p className="text-xl">John Wallace</p>
             </div>
 
