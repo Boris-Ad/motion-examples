@@ -41,7 +41,7 @@ export const DropMenu1 = () => {
               onMouseEnter={e => onEnter(e, inx)}
               onMouseLeave={() => setOpen(false)}
               key={person.id}
-              className={clsx('px-3 text-lg transition-color delay-75 duration-200', { 'text-amber-500': open && inx === count })}
+              className={clsx('px-3 text-lg transition-color delay-75 duration-200', { 'text-cyan-500': open && inx === count })}
             >
               {person.name.split(' ')[0]}
             </button>
@@ -76,7 +76,7 @@ export const DropMenu1 = () => {
                     className="h-full p-3 flex flex-col space-y-2"
                   >
                     <div className="flex items-center gap-x-3">
-                      <Image src={persons[count].img} alt={persons[count].name} width={40} height={40} className="object-center rounded-full" />
+                      <Image src={persons[count].img} alt={persons[count].name} width={40} height={40} className="h-10 w-10 object-cover rounded-full flex-none" />
                       <h3 className="text-lg">{persons[count].name}</h3>
                     </div>
                     <p className="text-sm text-slate-400 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est facilis omnis?</p>

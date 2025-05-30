@@ -17,7 +17,7 @@ const tabs = [
   { id: 4, icon: <Fullscreen className={styles} />, label: 'Модальное окно', href: '/modals' },
   { id: 5, icon: <Calendar1 className={styles} />, label: 'Календарь', href: '' },
   { id: 6, icon: <Timer className={styles} />, label: 'Таймер', href: '' },
-  { id: 7, icon: <Text className={styles} />, label: 'Текст', href: '' },
+  { id: 7, icon: <Text className={styles} />, label: 'Текст', href: '/text' },
   { id: 8, icon: <PanelTopOpen className={styles} />, label: 'Дроп меню', href: '/drop-menu' },
   { id: 9, icon: <Smile className={styles} />, label: 'Иконки', href: '/icons' },
 ];

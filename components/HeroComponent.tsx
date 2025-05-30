@@ -121,7 +121,7 @@ const One = ({ inx, onEnter, onLeave }: { inx: number; onEnter: (inx: number) =>
 const TextComponent = () => {
   return (
     <motion.div data-text-wrap className="absolute inset-0 isolate flex flex-col justify-center items-center z-30">
-      <div className="text-[160px] leading-40 font-normal text-fuchsia-600 tracking-wide">
+      <div className="text-[160px] leading-40 font-normal text-cyan-700 dark:text-cyan-500 tracking-wide">
         <div className="-ml-20 overflow-hidden">
           <motion.h2 data-hero-text className=" opacity-0">
             City
@@ -143,7 +143,7 @@ const TextGallery = () => {
       <ul className="flex overflow-hidden">
         {['g', 'a', 'l', 'l', 'e', 'r', 'y'].map((letter, inx) => (
           <motion.li key={inx} style={{ y: 50 }} className="uppercase opacity-0">
-            <span className="text-9xl text-fuchsia-600">{letter}</span>
+            <span className="text-9xl text-cyan-700 dark:text-cyan-500">{letter}</span>
           </motion.li>
         ))}
       </ul>
