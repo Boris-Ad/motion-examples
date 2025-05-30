@@ -33,12 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${roboto.variable} ${montserrat.variable} ${geistSans.variable} antialiased 2xl:grid 2xl:grid-cols-[auto_1fr] 2xl:grid-rows-[auto_1fr]`}>
+      <body
+        className={`${roboto.variable} ${montserrat.variable} ${geistSans.variable} antialiased 2xl:grid 2xl:grid-cols-[auto_1fr] 2xl:grid-rows-[auto_1fr]`}
+      >
+        <div className="2xl:hidden absolute inset-0 flex justify-center items-center">
+          <h1 className="text-2xl">Пока только desktop от 1536px</h1>
+        </div>
         <ThemeProvider attribute="class" enableSystem={false}>
-          <div className='2xl:hidden absolute inset-0 flex justify-center items-center'>
-            <h1 className='text-2xl'>Пока только desktop от 1536px</h1>
-          </div>
-          
           <Sidebar />
           <Navbar />
           <main className="hidden 2xl:block min-h-full overflow-y-auto relative row-start-2 bg-background transition-theme">{children}</main>
