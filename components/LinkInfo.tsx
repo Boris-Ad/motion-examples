@@ -9,6 +9,7 @@ export const LinkInfo = () => {
     '/accordions': 'Аккордеон',
     '/sliders': 'Слайдер',
     '/modals': 'Модальное окно',
+    '/timers': 'Таймер',
     '/text': 'Текст',
     '/drop-menu': 'Дроп меню',
     '/icons': 'Иконки',
@@ -21,9 +22,9 @@ export const LinkInfo = () => {
       <AnimatePresence>
         <motion.span
           key={pathname}
-          initial={{ y: -20, opacity: 0, scale:0.9 }}
-          animate={{ y: 0, opacity: 1, scale:1 }}
-          exit={{ y: 20, opacity: 0, scale:0.9 }}
+          initial={{ y: -20, opacity: 0, scale: 0.9 }}
+          animate={{ y: 0, opacity: 1, scale: 1 }}
+          exit={{ y: 20, opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.4 }}
           className="absolute text-nowrap text-xl"
         >
