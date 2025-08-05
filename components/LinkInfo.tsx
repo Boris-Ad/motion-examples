@@ -13,6 +13,7 @@ export const LinkInfo = () => {
     '/text': 'Текст',
     '/drop-menu': 'Дроп меню',
     '/icons': 'Иконки',
+    '/calendar':'Календарь'
   };
 
   const pathname = usePathname();

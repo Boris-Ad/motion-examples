@@ -44,7 +44,9 @@ export const Timer1 = () => {
             <Button
               click={() => {
                 onReset();
-                setReset(prev => prev + 1);
+                if (!stop) {
+                  setReset(prev => prev + 1);
+                }
               }}
             >
               Сброс

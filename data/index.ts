@@ -26,3 +26,6 @@ export const streetPhotos = [
     src: 'https://images.unsplash.com/photo-1746023841861-d5fcf4b3d510?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY1fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D',
   },
 ];
+
+export const daysWeek = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+export const monthsYear = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
